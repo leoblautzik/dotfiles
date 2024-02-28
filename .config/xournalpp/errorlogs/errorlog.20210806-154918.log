@@ -1,0 +1,41 @@
+Date: Fri Aug  6 15:49:18 2021
+Error: signal 11
+[bt]: (0) xournalpp(+0x1d95d2) [0x5587446875d2]
+[bt]: (1) /usr/lib/libc.so.6(+0x3cda0) [0x7f9195070da0]
+[bt]: (2) xournalpp(_Z16xoj_type_getNamei+0x1002) [0x558744691d32]
+[bt]: (3) xournalpp(_ZNK7Element7getTypeEv+0x45) [0x558744657c25]
+[bt]: (4) xournalpp(_ZN11SaveHandler10visitLayerEP7XmlNodeP5Layer+0x13d) [0x5587445d6aed]
+[bt]: (5) xournalpp(_ZN11SaveHandler9visitPageEP7XmlNode7PageRefP8Documenti+0x214) [0x5587445d7a44]
+[bt]: (6) xournalpp(_ZN11SaveHandler11prepareSaveEP8Document+0x21c) [0x5587445d77bc]
+[bt]: (7) xournalpp(_ZN11AutosaveJob3runEv+0xdb) [0x55874457499b]
+[bt]: (8) xournalpp(_ZN9Scheduler17jobThreadCallbackEPS_+0x14a) [0x55874457f98a]
+[bt]: (9) /usr/lib/libglib-2.0.so.0(+0x822c1) [0x7f91965c32c1]
+[bt]: (10) /usr/lib/libpthread.so.0(+0x9259) [0x7f9195689259]
+[bt]: (11) /usr/lib/libc.so.6(clone+0x43) [0x7f91951325e3]
+
+
+Try to get a better stracktrace...
+[bt] #1 xournalpp(+0x1d987b) [0x55874468787b]
+??:0
+[bt] #2 /usr/lib/libc.so.6(+0x3cda0) [0x7f9195070da0]
+??:0
+[bt] #3 xournalpp(_Z16xoj_type_getNamei+0x1002) [0x558744691d32]
+??:0
+[bt] #4 xournalpp(_ZNK7Element7getTypeEv+0x45) [0x558744657c25]
+??:0
+[bt] #5 xournalpp(_ZN11SaveHandler10visitLayerEP7XmlNodeP5Layer+0x13d) [0x5587445d6aed]
+??:0
+[bt] #6 xournalpp(_ZN11SaveHandler9visitPageEP7XmlNode7PageRefP8Documenti+0x214) [0x5587445d7a44]
+??:0
+[bt] #7 xournalpp(_ZN11SaveHandler11prepareSaveEP8Document+0x21c) [0x5587445d77bc]
+??:0
+[bt] #8 xournalpp(_ZN11AutosaveJob3runEv+0xdb) [0x55874457499b]
+??:0
+[bt] #9 xournalpp(_ZN9Scheduler17jobThreadCallbackEPS_+0x14a) [0x55874457f98a]
+??:0
+[bt] #10 /usr/lib/libglib-2.0.so.0(+0x822c1) [0x7f91965c32c1]
+??:0
+[bt] #11 /usr/lib/libpthread.so.0(+0x9259) [0x7f9195689259]
+??:0
+[bt] #12 /usr/lib/libc.so.6(clone+0x43) [0x7f91951325e3]
+??:0
