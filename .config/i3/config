@@ -107,7 +107,7 @@ floating_modifier $mod
 # start a terminal
 #bindsym $mod+Return exec i3-sensible-terminal
 #bindsym $mod+Return exec lxterminal
-#bindsym Mod1+Return exec alacritty
+bindsym Mod1+Return exec kitty
 bindsym $mod+Return exec alacritty
 
 # kill focused window
