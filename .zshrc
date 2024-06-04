@@ -17,6 +17,7 @@ export ZSH="/home/leoblau/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # ZSH_THEME="robbyrussell"
 # ZSH_THEME="agnoster"
+# ZSH_THEME="refined"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set list of themes to pick from when loading at random
@@ -181,8 +182,8 @@ function ya() {
 	rm -f -- "$tmp"
 }
 
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# clear && neofetch --config ~/.config/neofetch/axylfetch.conf
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-clear && neofetch --config ~/.config/neofetch/axylfetch.conf
