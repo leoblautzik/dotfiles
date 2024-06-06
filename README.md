@@ -14,7 +14,7 @@
     ```   
 
 ## Instalar paquetes extra
-
++
     ```bash
         sudo pacman -S git curl ripgrep rofi fzf mc neovim neofetch nitrogen firefox alacritty stow xclip pcmanfm zip unzip p7zip
     ``` 
