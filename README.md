@@ -1,45 +1,59 @@
 # LeoBlau ArchI3
 
+<!--toc:start-->
+- [LeoBlau ArchI3](#leoblau-archi3)
+  - [Instalar ArchLinux](#instalar-archlinux)
+  - [Instalar paquetes extra](#instalar-paquetes-extra)
+  - [Crear las carpetas de usuario](#crear-las-carpetas-de-usuario)
+  - [Instalar temas e iconos - Ver: https://aur.archlinux.org/packages?K=gtk-theme](#instalar-temas-e-iconos-ver-httpsaurarchlinuxorgpackageskgtk-theme)
+  - [Instalar Algunas Nerd Fonts](#instalar-algunas-nerd-fonts)
+  - [Instalar OhMyzsh](#instalar-ohmyzsh)
+  - [Instalar lsd y bat](#instalar-lsd-y-bat)
+  - [Clonar dotfiles](#clonar-dotfiles)
+  - [Instalar paru (AUR)](#instalar-paru-aur)
+<!--toc:end-->
+
 
 ## Instalar ArchLinux
 
-+ Descargar ISO y hacer un USB booteable
-+ Instalar mediante archinstall eligiendo: Profile Desktop con i3
-+ Se puede agregar a la lista de paquetes extra:
+Descargar ISO y hacer un USB booteable.
+Instalar mediante archinstall eligiendo: Profile Desktop con i3.
+Se puede agregar a la lista de paquetes extra:
         - git curl 
 
-+ Reiniciar y todo debría funcionar con i3-wm
-+ En caso de querer seguir con ssh: 
+Reiniciar y todo debría funcionar con i3-wm.
+En caso de querer seguir con ssh: 
 
 ```bash
 
     sudo systemctl enable sshd 
     sudo systemctl start sshd
+
 ```   
 
-
 ## Instalar paquetes extra
+
 
 ```bash
 
     sudo pacman -S git curl ripgrep rofi fzf mc neovim neofetch nitrogen firefox alacritty stow xclip pcmanfm zip unzip p7zip
+
 ``` 
 
-
 ## Crear las carpetas de usuario
-    
+
 ```bash
 
-    sudo pacman -S xdg-user-dirs && xdg-user-dirs-update
+   sudo pacman -S xdg-user-dirs && xdg-user-dirs-update
+
 ```
 
-## Instalar temas e iconos
+## Instalar temas e iconos - Ver: https://aur.archlinux.org/packages?K=gtk-theme
 
 ```bash
 
     sudo pacman -S picom lxappearance papirus-icon-theme adapta-gtk-theme arc-gtk-theme arc-solid-gtk-theme 
-    #ver: https://aur.archlinux.org/packages?K=gtk-theme
-``` 
+```
 
 ## Instalar Algunas Nerd Fonts
 
@@ -65,17 +79,15 @@
 
 ``` 
 
-## Instalar OhMyzsh
+## Instalar lsd y bat
 
 ```bash
 
-    sudo pacman zsh
-    # Lsd y bat
-    pacman -S lsd
-    pacman -S bat
+    sudo pacman -S lsd
+    sudo pacman -S bat
 ```
 
-+ Reiniciar
+Reiniciar.
     
 ## Clonar dotfiles
     
@@ -89,7 +101,7 @@
 
 ## Instalar paru (AUR)
 
-+ Clonar paru-bin dentro de ~/tmp
+Clonar paru-bin dentro de ~/tmp
 
 ```bash
 
