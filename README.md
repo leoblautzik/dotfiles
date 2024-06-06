@@ -13,7 +13,7 @@
         sudo systemctl start sshd
     ```   
 
-# Instalar paquetes extra
+## Instalar paquetes extra
 
     ```bash
         sudo pacman -S git curl ripgrep rofi fzf mc neovim neofetch nitrogen firefox alacritty stow xclip pcmanfm zip unzip p7zip
@@ -24,20 +24,20 @@
         sudo pacman -S xdg-user-dirs && xdg-user-dirs-update
     ``` 
 
-# Instalar temas e iconos
+## Instalar temas e iconos
 
     ```bash
         sudo pacman -S picom lxappearance papirus-icon-theme adapta-gtk-theme arc-gtk-theme arc-solid-gtk-theme 
         #ver: https://aur.archlinux.org/packages?K=gtk-theme
     ``` 
 
-# Instalar Algunas Nerd Fonts
+## Instalar Algunas Nerd Fonts
 
     ```bash
         sudo pacman -S ttf-jetbrains-mono-nerd ttf-meslo-nerd ttf-firacode-nerd
     ``` 
 
-# Instalar OhMyzsh
+## Instalar OhMyzsh
 
     ```bash
         sudo pacman zsh
@@ -53,7 +53,7 @@
 
     ``` 
 
-# Instalar OhMyzsh
+## Instalar OhMyzsh
 
     ```bash
         sudo pacman zsh
@@ -64,7 +64,7 @@
 
 + Reiniciar
     
-# Clonar dotfiles
+## Clonar dotfiles
     
     ```bash
         git clone https://github.com/leoblautzik/dotfiles.git ~/dotfiles
@@ -73,7 +73,7 @@
         stow --adopt .
     ```
 
-# Instalar paru (AUR)
+## Instalar paru (AUR)
 
 + Clonar paru-bin dentro de ~/tmp
 
