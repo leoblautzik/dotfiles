@@ -35,7 +35,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
 # Transparency
-#exec --no-startup-id picom -b -f
+exec --no-startup-id picom -b -f
 
 # Wallpaper
 exec --no-startup-id nitrogen --restore; sleep 1;
@@ -79,7 +79,6 @@ bindsym $mod+Tab exec rofi -show window -show-icons
 # Floating windows
 for_window [class="Nitrogen"] floating enable sticky enable border normal
 for_window [class="Pavucontrol"] floating enable sticky enable border normal
-for_window [class="Nitrogen"] floating enable sticky enable border normal
 for_window [class="Lxappearance"] floating enable sticky enable border normal
 
 
