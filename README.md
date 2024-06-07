@@ -40,6 +40,16 @@ En caso de querer seguir con ssh:
 
 ``` 
 
+## Audio
+
+
+```bash
+
+    sudo pacman -S volumeicon pavucontrol
+
+``` 
+
+    
 ## Crear las carpetas de usuario
 
 ```bash
