@@ -19,7 +19,7 @@
 Descargar ISO y hacer un USB booteable.
 Instalar mediante archinstall eligiendo: Profile Desktop con i3.
 Se puede agregar a la lista de paquetes extra:
-        - git curl 
+        - git curl firefox xclip alacritty zsh
 
 Reiniciar y todo debría funcionar con i3-wm.
 En caso de querer seguir con ssh: 
