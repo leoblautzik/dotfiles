@@ -23,7 +23,10 @@ cd paru-bin
 makepkg -si 
 
 #cd ~
-#git clone https://github.com/leoblautzik/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 #dentro de ~/dotfiles hacer: 
 stow --adopt .
+rm -rf ~/dotfiles
+git clone https://github.com/leoblautzik/dotfiles.git ~/dotfiles
+sudo cp ~/dotfiles/mouse/30-touchpad.conf /etc/X11/xorg.conf.d/30-touchpad.conf
+git clone https://github.com/leoblautzik/NvChad.git ~/.config/nvim
