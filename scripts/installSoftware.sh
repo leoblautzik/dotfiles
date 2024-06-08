@@ -4,7 +4,7 @@ sudo systemctl enable sshd
 sudo systemctl start sshd
 sudo pacman -S xdg-user-dirs
 xdg-user-dirs-update
-sudo pacman -S git curl ripgrep rofi fzf mc neovim neofetch nitrogen firefox alacritty stow xclip pcmanfm zip unzip p7zip volumeicon pavucontrol picom lxappearance papirus-icon-theme adapta-gtk-theme arc-gtk-theme arc-solid-gtk-theme ttf-jetbrains-mono-nerd ttf-meslo-nerd ttf-firacode-nerd lsd bat gtk-engine-murrine rsync
+sudo pacman -S git curl ripgrep rofi fzf mc neovim neofetch nitrogen firefox alacritty stow xclip pcmanfm zip unzip p7zip volumeicon pavucontrol picom lxappearance papirus-icon-theme adapta-gtk-theme arc-gtk-theme arc-solid-gtk-theme ttf-jetbrains-mono-nerd ttf-meslo-nerd ttf-firacode-nerd lsd bat gtk-engine-murrine rsync tmux
 
 # ohmyzsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -28,5 +28,10 @@ cd ~/dotfiles
 stow --adopt .
 rm -rf ~/dotfiles
 git clone https://github.com/leoblautzik/dotfiles.git ~/dotfiles
+# Mopuse Tapping
 sudo cp ~/dotfiles/mouse/30-touchpad.conf /etc/X11/xorg.conf.d/30-touchpad.conf
+# Neovim Nvchad + leoblautzik
 git clone https://github.com/leoblautzik/NvChad.git ~/.config/nvim
+# Tmux tpm plugin manager
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
