@@ -8,6 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+# ZSH_THEME="agnoster"
 ZSH_THEME="refined"
 # ZSH_THEME="robbyrussell"
 
@@ -72,7 +73,7 @@ ZSH_THEME="refined"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-    vi-mode
+    #vi-mode
     git
     archlinux
     zsh-autosuggestions
@@ -129,7 +130,7 @@ alias ll='lsd -lh --group-dirs=first'
 alias la='lsd -a --group-dirs=first'
 alias l='lsd --group-dirs=first'
 alias lla='lsd -lha --group-dirs=first'
-alias lla='lsd -lhaR --group-dirs=first'
+alias llar='lsd -lhaR --group-dirs=first'
 alias ls='lsd --group-dirs=first'
 alias lsdirs='ls -d */'
 alias lt='lsd --tree --group-dirs=first'
