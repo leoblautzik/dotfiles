@@ -12,5 +12,4 @@ stow picom
 stow rofi
 stow tmux
 stow yazi
-stow wallpapers
 stow zshrc
