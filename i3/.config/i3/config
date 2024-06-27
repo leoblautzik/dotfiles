@@ -100,11 +100,11 @@ for_window [class="Lxappearance"] floating enable sticky enable border normal
 
 
 
-# change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+ntilde focus right
+# change focus (like tmux-navigator)
+bindsym Ctrl+h focus left
+bindsym Ctrl+j focus down
+bindsym Ctrl+k focus up
+bindsym Ctrl+l focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
