@@ -10,11 +10,11 @@ sudo pacman -S git curl xdg-user-dirs ripgrep tree rofi fzf mc yazi neovim neofe
 xdg-user-dirs-update
 
 # Wallpapers
-mv ~/dotfiles/wallpapers  ~
+mv ~/dotfiles/wallpapers/wallpapers  ~
 
 # lightdm-slick-greeter
 sudo cp ~/dotfiles/lightdm/*.conf /etc/lightdm/
-sudo cp ~/dotfiles/wallpapers/art.jpg /usr/share/backgrounds/archlinux/greeter.jpg
+sudo cp ~/wallpapers/art.jpg /usr/share/backgrounds/archlinux/greeter.jpg
 
 # Mopuse Tapping
 sudo cp ~/mouse/30-touchpad.conf /etc/X11/xorg.conf.d/30-touchpad.conf
