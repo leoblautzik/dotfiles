@@ -49,6 +49,8 @@ exec --no-startup-id picom -b -f
 bindsym $mod+Shift+t exec --no-startup-id picom -b -f
 bindsym $mod+Ctrl+t exec --no-startup-id pkill picom
 
+# Gestión USB
+exec --no-startup-id udiskie -a -t
 
 # Wallpaper
 exec --no-startup-id nitrogen --restore; sleep 1;
@@ -97,8 +99,6 @@ bindsym $mod+Tab exec rofi -show window -show-icons
 for_window [class="pavucontrol"] floating enable sticky enable border normal
 for_window [class="Nitrogen"] floating enable sticky enable border normal
 for_window [class="Lxappearance"] floating enable sticky enable border normal
-
-
 
 # change focus (like tmux-navigator)
 bindsym $mod1+h focus left

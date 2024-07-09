@@ -4,7 +4,7 @@ sudo systemctl enable sshd
 sudo systemctl start sshd
 
 # Instalar software
-sudo pacman -S zsh git curl xdg-user-dirs ripgrep tree rofi fzf mc yazi neovim neofetch nitrogen firefox alacritty stow xclip xpdf pcmanfm zip unzip p7zip volumeicon pavucontrol picom lxappearance papirus-icon-theme adapta-gtk-theme arc-gtk-theme arc-solid-gtk-theme ttf-jetbrains-mono-nerd ttf-meslo-nerd ttf-firacode-nerd lsd bat gtk-engine-murrine rsync tmux lightdm-slick-greeter xautolock rsync
+sudo pacman -S zsh git curl xdg-user-dirs ripgrep tree rofi fzf mc yazi neovim neofetch nitrogen firefox alacritty stow xclip xpdf pcmanfm zip unzip p7zip volumeicon pavucontrol picom lxappearance papirus-icon-theme adapta-gtk-theme arc-gtk-theme arc-solid-gtk-theme ttf-jetbrains-mono-nerd ttf-meslo-nerd ttf-firacode-nerd lsd bat gtk-engine-murrine rsync tmux lightdm-slick-greeter xautolock xarchiver udiskie brightnessctl evince xournalpp
 
 # Crea las carpetas de usuario
 xdg-user-dirs-update
@@ -14,6 +14,7 @@ mv ~/dotfiles/wallpapers/wallpapers  ~
 
 # lightdm-slick-greeter
 sudo cp ~/dotfiles/lightdm/*.conf /etc/lightdm/
+sudo mkdir -p /usr/share/backgrounds/archlinux
 sudo cp ~/wallpapers/art.jpg /usr/share/backgrounds/archlinux/greeter.jpg
 
 # Mopuse Tapping
@@ -41,6 +42,11 @@ makepkg -si
 # script que hace stow de los paquetes personalizados en dotfiles. 
 ~/dotfiles/scripts/scripts/stow-all.sh
 
+# Java
+sudo pacman -S jdk-openjdk
+
+# go
+sudo pacman -S go
+
 # Neovim neovim + leoblautzik
 git clone https://github.com/leoblautzik/Nv-leoblau.git ~/.config/nvim
-
