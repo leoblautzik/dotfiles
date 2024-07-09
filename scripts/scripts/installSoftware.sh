@@ -4,7 +4,7 @@ sudo systemctl enable sshd
 sudo systemctl start sshd
 
 # Instalar software
-sudo pacman -S git curl xdg-user-dirs ripgrep tree rofi fzf mc yazi neovim neofetch nitrogen firefox alacritty stow xclip xpdf pcmanfm zip unzip p7zip volumeicon pavucontrol picom lxappearance papirus-icon-theme adapta-gtk-theme arc-gtk-theme arc-solid-gtk-theme ttf-jetbrains-mono-nerd ttf-meslo-nerd ttf-firacode-nerd lsd bat gtk-engine-murrine rsync tmux lightdm-slick-greeter xautolock rsync
+sudo pacman -S zsh git curl xdg-user-dirs ripgrep tree rofi fzf mc yazi neovim neofetch nitrogen firefox alacritty stow xclip xpdf pcmanfm zip unzip p7zip volumeicon pavucontrol picom lxappearance papirus-icon-theme adapta-gtk-theme arc-gtk-theme arc-solid-gtk-theme ttf-jetbrains-mono-nerd ttf-meslo-nerd ttf-firacode-nerd lsd bat gtk-engine-murrine rsync tmux lightdm-slick-greeter xautolock rsync
 
 # Crea las carpetas de usuario
 xdg-user-dirs-update
@@ -17,7 +17,7 @@ sudo cp ~/dotfiles/lightdm/*.conf /etc/lightdm/
 sudo cp ~/wallpapers/art.jpg /usr/share/backgrounds/archlinux/greeter.jpg
 
 # Mopuse Tapping
-sudo cp ~/mouse/30-touchpad.conf /etc/X11/xorg.conf.d/30-touchpad.conf
+sudo cp ~/dotfiles/mouse/mouse/30-touchpad.conf /etc/X11/xorg.conf.d/30-touchpad.conf
 
 # ohmyzsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
