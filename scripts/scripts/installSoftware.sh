@@ -4,7 +4,7 @@ sudo systemctl enable sshd
 sudo systemctl start sshd
 
 # Instalar software
-sudo pacman -S zsh git curl xdg-user-dirs ripgrep tree rofi fzf mc yazi neovim neofetch nitrogen firefox alacritty stow xclip xpdf pcmanfm zip unzip p7zip volumeicon pavucontrol picom lxappearance papirus-icon-theme adapta-gtk-theme arc-gtk-theme arc-solid-gtk-theme ttf-jetbrains-mono-nerd ttf-meslo-nerd ttf-firacode-nerd lsd bat gtk-engine-murrine rsync tmux lightdm-slick-greeter xautolock xarchiver udiskie brightnessctl evince xournalpp
+sudo pacman -S zsh git curl xdg-user-dirs ripgrep tree rofi fzf mc yazi neovim neofetch nitrogen firefox alacritty stow xclip xpdf pcmanfm zip unzip p7zip volumeicon pavucontrol picom lxappearance papirus-icon-theme adapta-gtk-theme arc-gtk-theme arc-solid-gtk-theme ttf-jetbrains-mono-nerd ttf-meslo-nerd ttf-firacode-nerd lsd bat gtk-engine-murrine rsync tmux lightdm-slick-greeter xautolock xarchiver udiskie brightnessctl evince xournalpp npm
 
 # Crea las carpetas de usuario
 xdg-user-dirs-update
