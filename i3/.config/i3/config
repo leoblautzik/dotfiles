@@ -45,7 +45,7 @@ exec --no-startup-id xautolock -time 5 -locker "i3lock -c 000000 -n" -killtime 5
 exec --no-startup-id nm-applet
 
 # Transparency
-# exec --no-startup-id picom -b -f
+exec --no-startup-id picom -b -f
 bindsym $mod+Shift+t exec --no-startup-id picom -b -f
 bindsym $mod+Ctrl+t exec --no-startup-id pkill picom
 
@@ -81,7 +81,8 @@ tiling_drag modifier titlebar
 
 # start a terminal
 #bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod1+Return exec alacritty
+bindsym $mod+Return exec kitty
 
 # kill focused window
 bindsym $mod+Shift+q kill
